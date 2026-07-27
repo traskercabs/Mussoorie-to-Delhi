@@ -4,11 +4,24 @@
   <meta name="google-site-verification" content="pDkMOxEYynkccisqt4u0ruj92kylimPHBnyAyryzd24" />
   <!-- Google tag (gtag.js) -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-5EM9KRMB0L');
-  </script>
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-R7QJWV870X';
+      document.head.appendChild(script);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+
+      gtag('js', new Date());
+      gtag('config', 'G-R7QJWV870X');
+
+    }, 3000); // Delay by 3 seconds after page load
+  });
+</script>
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
@@ -451,7 +464,7 @@
         </div>
 
         <button class="btn-action" onclick="handleButtonClick('widget_book')">
-          ⚡ Secure This Route via WhatsApp
+          BOOK
         </button>
       </div>
     </header>
@@ -627,7 +640,7 @@
         <h4>Navigation Links</h4>
         <a href="https://traskercabs.github.io/Trasker-Cabs/">Main Web Portal</a>
         <a href="https://traskercabs.github.io/Delhi-Dehradun/">Delhi to Dehradun Cab</a>
-        <a href="https://traskercabs.github.io/Trasker-Cabs/delhi-to-mussoorie.html">Delhi to Mussoorie Cab</a>
+        <a href="https://traskercabs.github.io/Delhi-Mussoorie/">Delhi to Mussoorie Cab</a>
       </div>
       <div class="footer-col">
         <h4>Support Terminal</h4>
